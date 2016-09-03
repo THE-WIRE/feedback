@@ -7,10 +7,10 @@ class Subject extends Department
     public $sub_name = null;
     public $sem = null;
 
-    public function add($sub_id,$sub_name,$dep_id,$sem)
+    public function add($sub_id,$sub_name,$sem)
     {
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
-        $query="INSERT INTO `subject`( `colg_id`,`sub_id`,`sub_name`,`dep_id`,`sem`) VALUES (`$this->colg_id`,`$sub_id`,`$sub_name`,`$this->dep_id`,`$sem`)";
+        $query="INSERT INTO `subject`( `colg_id`,`sub_id`,`sub_name`,`dep_id`,`sem`) VALUES (`$this->col_id`,`$sub_id`,`$sub_name`,`$this->dept_id`,`$sem`)";
 
         if($db->query($query))
         {
