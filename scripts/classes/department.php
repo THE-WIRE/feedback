@@ -8,9 +8,10 @@
  */
 
 require_once('../config.php');
-require_once('sql/shared/ez_sql_core.php');
-require_once('sql/mysqli/ez_sql_mysqli.php');
+require_once('../sql/shared/ez_sql_core.php');
+require_once('../sql/mysqli/ez_sql_mysqli.php');
 require_once('college.php');
+
 
 class Department extends College
 {
@@ -34,7 +35,7 @@ class Department extends College
     public function delete($dept_id){
 
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
-        $query = "DELETE FROM `department` WHERE `colg_id` = '$this->col_id' AND `dep_id` = '$dept_id'";
+        $query = "DELETE FROM `department` WHERE `dep_id` = '$dept_id'";
 
         if($db->query($query)){
 
