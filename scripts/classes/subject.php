@@ -24,10 +24,10 @@ class Subject extends Department
         }
     }
 
-    public function delete()
+    public function delete($sub_id)
     {
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
-        $query="DELETE FROM `subject` WHERE `sub_id`=$this->sub_id";
+        $query="DELETE FROM `subject` WHERE `sub_id`=$sub_id";
 
         if($db->query($query))
         {
