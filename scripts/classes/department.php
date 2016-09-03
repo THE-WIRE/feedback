@@ -8,5 +8,9 @@
  */
 class Department
 {
+        public function add(){
+            
+            include('../connection.php');
+        }
 
 }
