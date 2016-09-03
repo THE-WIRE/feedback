@@ -16,7 +16,7 @@
     </head>
     <body>
         <!-- START PAGE CONTAINER -->
-        <div class="page-container">
+        <div class="page-container" id="pagecontainer">
             
             <!-- START PAGE SIDEBAR -->
             <div class="page-sidebar">
@@ -67,21 +67,45 @@
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Survey Id : <br><input type="text" name="surveyId" id="Sid" "> </h3>
+                                    <h3 class="panel-title">Survey ID :</h3>
+                                    <br>
+                                    <br>
+                                    <br>
+                                        <input type="text" name="surveyId" id="Sid" placeholder="Survey ID">
                                 </div>
                                 <div class="panel-body">
-                                    Semester Type : <br><input type="text" name="semtype" id="SemEO">
+                                    <h3 class="panel-sub-title">Semester Type :</h3>
+                                    <br>
+                                    <select id="SemSelector" name="SemType">
+                                        <option value="Odd">Odd</option>
+                                        <option value="Even">Even</option>
+                                    </select>
                                     <br>
                                     <br>
-                                    Year : <br><input type="text" name="year">
+                                    <h3>Year :</h3>
+                                    <br>
+                                    <select id="year" name="CurentYear">
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                    </select>
                                 </div>
                             </div>
-                            <input type="submit" value="Create">
+                            <input type="submit" id="button" value="Create">
+                            <br><br><br><br>
+                            <p id="copyright"><center>&copy;Bharati Vidyapeeth College Of Engineering, Navi Mumbai</center></p>
                         </div>
                     </div>
-                
+
                 </div>
-                <!-- END PAGE CONTENT WRAPPER -->                
+                <!-- END PAGE CONTENT WRAPPER -->
+
             </div>            
             <!-- END PAGE CONTENT -->
         </div>
