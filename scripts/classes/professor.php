@@ -6,7 +6,7 @@
  * Date: 03-09-2016
  * Time: 16:25
  */
- class Professor
+ class Professor extends department
  {
      public $prof_id = null;
      public $prof_name = null;
