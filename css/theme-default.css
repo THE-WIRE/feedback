@@ -1459,7 +1459,7 @@ a.list-group-item:focus {
   top: 0px;
 }
 .panel .panel-heading {
-  padding: 10px;
+  padding: 30px;
 }
 .panel .panel-heading .panel-title-image {
   float: left;
@@ -1492,12 +1492,14 @@ a.list-group-item:focus {
 }
 .panel .panel-heading,
 .panel .panel-footer,
+
 .panel .panel-body {
   float: left;
   width: 100%;
+  padding-top:60px;
 }
 .panel .panel-body {
-  padding: 15px;
+  padding: 35px;
   position: relative;
 }
 .panel .panel-body.scroll {
@@ -2541,7 +2543,7 @@ label.valid {
 .page-title {
   float: left;
   width: 100%;
-  padding: 5px 10px;
+  padding: 65px 10px;
 }
 .page-title h2 {
   float: left;
@@ -2573,8 +2575,9 @@ h1,
 h2,
 .h2 {
   margin-bottom: 15px;
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 300;
+  font-weight:bolder;
 }
 h3,
 .h3 {
@@ -3095,6 +3098,8 @@ blockquote.pull-right {
   color: #56688A;
   font-size: 12px;
 }
+
+
 .panel-body.panel-body-table {
   padding: 0px;
 }
