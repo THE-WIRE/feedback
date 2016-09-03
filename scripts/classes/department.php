@@ -14,13 +14,13 @@ require_once('college.php');
 
 class Department extends College
 {
-    private $dept_id    = '';
-    private $dept_name  = '';
+    protected $dept_id    = '';
+    protected $dept_name  = '';
 
-    public function add($dept_id, $dept_name, $col_id){
+    public function add($dept_id, $dept_name){
 
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
-        $query = "INSERT INTO `department`(`dep_id`, `dep_name`, `colg_id`) VALUES('$dept_id', '$dept_name', '$col_id')";
+        $query = "INSERT INTO `department`(`dep_id`, `dep_name`, `colg_id`) VALUES('$dept_id', '$dept_name', '$this->col_id')";
 
         if($db->query($query)){
             $this->dept_id   = $dept_id;
@@ -31,10 +31,10 @@ class Department extends College
 
     }
 
-    public function delete($dept_id, $col_id){
+    public function delete($dept_id){
 
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
-        $query = "DELETE FROM `department` WHERE `colg_id` = '$col_id' AND `dep_id` = '$dept_id'";
+        $query = "DELETE FROM `department` WHERE `colg_id` = '$this->col_id' AND `dep_id` = '$dept_id'";
 
         if($db->query($query)){
 
