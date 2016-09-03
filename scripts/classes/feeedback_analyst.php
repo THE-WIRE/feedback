@@ -19,7 +19,15 @@ class FeedA
     {
         $s=new Subject();
         $s->add($sub_id,$sub_name,$sem);
+
     }
+    //del subject
+    public function del_sub($sub_id)
+    {
+        $s=new Subject();
+        $s->delete($sub_id);
+    }
+
 
     //add professor
     public function add_prof($prof_id, $prof_name)
@@ -27,12 +35,24 @@ class FeedA
         $p=new Professor();
         $p->add($prof_id, $prof_name);
     }
+    //del professor
+    public function del_prof($prof_id)
+    {
+        $p=new Professor();
+        $p->delete($prof_id);
+    }
 
     //add question
     public function add_que($q_id, $question)
     {
         $q=new Questions();
         $q->add($q_id, $question);
+    }
+    //del question
+    public function del_que($q_id)
+    {
+        $q=new Questions();
+        $q->delete($q_id);
     }
 
 
