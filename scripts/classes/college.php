@@ -6,6 +6,11 @@
  * Date: 03-Sep-16
  * Time: 4:31 PM
  */
+
+require_once('../config.php');
+require_once('../sql/shared/ez_sql_core.php');
+require_once('../sql/mysqli/ez_sql_mysqli.php');
+
 class College
 {
     public $col_id = '';
