@@ -10,8 +10,9 @@
 require_once('../config.php');
 require_once('sql/shared/ez_sql_core.php');
 require_once('sql/mysqli/ez_sql_mysqli.php');
+require_once('college.php');
 
-class Department
+class Department extends College
 {
     private $dept_id    = '';
     private $dept_name  = '';
