@@ -1,7 +1,5 @@
 <?php
-require_once('../config.php');
-require_once('sql/shared/ez_sql_core.php');
-require_once('sql/mysqli/ez_sql_mysqli.php');
+require_once('department.php');
 
 class Subject extends Department
 {
@@ -16,15 +14,28 @@ class Subject extends Department
 
         if($db->query($query))
         {
-            $this->colg_id= $this->colg_id;
             $this->sub_id = $sub_id;
             $this->sub_name = $sub_name;
-            $this->dep_id = $this->dep_id ;
             $this->sem = $sem;
         }
         else
         {
             throw new Exception('failed adding subject in database');
+        }
+    }
+
+    public function delete()
+    {
+        $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+        $query="DELETE FROM `subject` WHERE `sub_id`=$this->sub_id";
+
+        if($db->query($query))
+        {
+
+        }
+        else
+        {
+            throw new Exception('deletion failed , failed to connect database');
         }
     }
 }
