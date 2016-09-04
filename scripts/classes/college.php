@@ -16,6 +16,21 @@ class College
     public $col_id = '';
     public $col_name = '';
 
+    function __construct($col_id){
+        $this->col_id = $col_id;
+    }
+
+    public function retrieve(){
+        $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+        $query = "SELECT * FROM `college` WHERE `colg_id` = '$this->col_id'";
+
+        if($res = $db->query($query)){
+            $this->col_name = $res->colg_name;
+        }else{
+            throw new Exception('Failed retrieving college information. Database Error.');
+        }
+    }
+
     public function add($col_id, $col_name){
 
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
