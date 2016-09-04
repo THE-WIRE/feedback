@@ -340,8 +340,10 @@
                 <!-- START VERTICAL TABS WITH HEADING -->
                 <div class="panel panel-default nav-tabs-vertical">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Survey</h3>
+
+                            <h3 class="panel-title">Survey</h3>
                     </div>
+
                     <div class="tabs">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#tab19" data-toggle="tab">Subject 1:</a></li>
@@ -356,7 +358,8 @@
                             <div class="tab-pane active " id="tab19">
                                 <h4 >Questions:</h4>
                             <p>Are you sure about the subject:</p>
-                                <p>Ratings:</p>
+
+                                    <p>Ratings:</p>
 
                                             <div class="col-md-12">
 
@@ -374,19 +377,20 @@
                                 </div>
 
 
-                                </div>
+                            </div>
                             <div class="tab-pane" id="tab20">
                                 <p>Are you sure about yourself:</p>
-                                <p>Ratings:</p>
-                                <div class="col-md-12">
 
-                                    <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star"></i></button>
+                                    <p>Ratings:</p>
+                                        <div class="col-md-12">
 
-                                </div>
+                                            <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star"></i></button>
+
+                                        </div>
 
                                 <div class="form-group">
                                     <label for="comment">Comment:</label>
@@ -395,16 +399,17 @@
                             </div>
                             <div class="tab-pane" id="tab21">
                                 <p>Are you sure about your classmates:</p>
-                                <p>Ratings:</p>
-                                <div class="col-md-12">
 
-                                    <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star"></i></button>
+                                    <p>Ratings:</p>
+                                        <div class="col-md-12">
 
-                                </div>
+                                            <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star"></i></button>
+
+                                        </div>
 
                                 <div class="form-group">
                                     <label for="comment">Comment:</label>
@@ -413,16 +418,18 @@
                             </div>
                             <div class="tab-pane" id="tab22">
                                 <p>Do you believe in yourself:</p>
-                                <p>Ratings:</p>
-                                <div class="col-md-12">
 
-                                    <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star"></i></button>
+                                    <p>Ratings:</p>
+                                        <div class="col-md-12">
 
-                                </div>
+                                            <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star"></i></button>
+
+                                        </div>
+
                                 <div class="form-group">
                                     <label for="comment">Comment:</label>
                                     <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -431,16 +438,18 @@
                             </div>
                             <div class="tab-pane" id="tab23">
                                 <p>FUCK OFF!!:</p>
-                                <p>Ratings:</p>
-                                <div class="col-md-12">
 
-                                    <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
-                                    <button class="btn btn-default"><i class="fa fa-star"></i></button>
+                                    <p>Ratings:</p>
+                                        <div class="col-md-12">
 
-                                </div>
+                                            <button class="btn btn-default"><i class="fa fa-star-o"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star-half-empty"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-star"></i></button>
+
+                                        </div>
+
                                 <div class="form-group">
                                     <label for="comment">Comment:</label>
                                     <textarea class="form-control" rows="5" id="comment"></textarea>
