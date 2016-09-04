@@ -1459,7 +1459,7 @@ a.list-group-item:focus {
   top: 0px;
 }
 .panel .panel-heading {
-  padding: 30px;
+  padding: 10px;
 }
 .panel .panel-heading .panel-title-image {
   float: left;
@@ -1492,18 +1492,12 @@ a.list-group-item:focus {
 }
 .panel .panel-heading,
 .panel .panel-footer,
-
-
-
-
-
 .panel .panel-body {
   float: left;
   width: 100%;
-  padding-top:60px;
 }
 .panel .panel-body {
-  padding: 35px;
+  padding: 15px;
   position: relative;
 }
 .panel .panel-body.scroll {
@@ -1592,52 +1586,13 @@ a.list-group-item:focus {
   margin-top: -15px;
 }
 .panel .panel-title {
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   display: block;
   float: left;
   color: #434a54;
 }
-
-#Sid{
-  padding:20px;
-}
-
-#button{
-  width:100px;
-  height:40px;
-  font-size:14px;
-  margin-left:465px;
-  background-color:#45a049;
-  color:#fff;
-  -webkit-border-radius:8px;
-  -moz-border-radius:8px;
-  border-radius:8px;
-
-}
-
-#button:hover{
-  background-color:#3e8e41;
-  box-shadow: 10px 8px 3px #888888;
-}
-
-#pagecontainer{
-  width:1320px;
-  height:850px;
-  box-shadow:0px 0px 60px black;
-}
-
-#year{
-  width:100px;
-  padding:12px;
-}
-
-#SemSelector{
-  width:100px;
-  padding:12px;
-}
-
 .panel .panel-footer {
   background: #F5F5F5;
   border: 0px;
@@ -2586,7 +2541,7 @@ label.valid {
 .page-title {
   float: left;
   width: 100%;
-  padding: 65px 10px;
+  padding: 5px 10px;
 }
 .page-title h2 {
   float: left;
@@ -2618,10 +2573,8 @@ h1,
 h2,
 .h2 {
   margin-bottom: 15px;
-  font-size: 36px;
-  font-weight: 300;
-  font-weight:bolder;
-  text-shadow:4px 0px 2px rgba(0,0,0,0.5);
+  font-size: 26px;
+  font-weight: 400;
 }
 h3,
 .h3 {
@@ -3142,8 +3095,6 @@ blockquote.pull-right {
   color: #56688A;
   font-size: 12px;
 }
-
-
 .panel-body.panel-body-table {
   padding: 0px;
 }
