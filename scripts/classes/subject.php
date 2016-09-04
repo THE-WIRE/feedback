@@ -38,4 +38,16 @@ class Subject extends Department
             throw new Exception('deletion failed , failed to connect database');
         }
     }
+
+    public function update($sub_id){
+
+        $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+        $query = "UPDATE `subject` SET (`sub_id = $sub_id`)";
+
+        if($db->query($query)){
+
+        }else{
+            throw new Exception("Failed to update Subject. Database Error");
+        }
+    }
 }

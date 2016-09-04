@@ -44,4 +44,18 @@ class Department extends College
         }
     }
 
+    public function update($dep_id){
+
+        $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+        $query = "UPDATE `department` SET (`dep_id = $dep_id`)";
+
+        if($db->query($query)){
+
+        }else{
+            throw new Exception("Failed to update Department. Database Error");
+        }
+
+
+    }
+
 }
