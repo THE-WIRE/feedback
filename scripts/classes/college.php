@@ -41,4 +41,16 @@ class College
             throw new Exception('Failed deleting college. Database Error.');
         }
     }
+
+    public function update($col_id){
+
+        $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+        $query = "UPDATE `college` SET (`col_id = $col_id`)";
+
+        if($db->query($query)){
+
+        }else{
+            throw new Exception("Failed to update College. Database Error");
+        }
+    }
 }
