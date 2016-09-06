@@ -16,9 +16,16 @@ class College
     public $col_id = '';
     public $col_name = '';
 
-    function __construct($col_id){
-        $this->col_id = $col_id;
-        $this->retrieve();
+    function __construct($col_id = null){
+
+        if($col_id == null){
+            //retrieve all
+        }
+        else{
+            $this->col_id = $col_id;
+            $this->retrieve();
+        }
+
     }
 
     private function retrieve(){
@@ -29,6 +36,17 @@ class College
             $this->col_name = $res->colg_name;
         }else{
             throw new Exception('Failed retrieving college information. Database Error.');
+        }
+    }
+
+    public function retrieveAll(){
+        $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+        $query = "SELECT * FROM `college`";
+
+        if($res = $db->get_results($query)){
+            return $res;
+        }else{
+            throw new Exception('Failed retrieving colleges information. Database Error.');
         }
     }
 

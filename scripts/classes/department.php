@@ -23,7 +23,7 @@ class Department extends College
         parent::__construct($col_id);
 
         if($dept_id == null){
-            $this->retrieveAll();
+            //$this->retrieveAll();
         }
         else{
 
@@ -44,7 +44,7 @@ class Department extends College
         }
     }
 
-    private function retrieveAll(){
+    public function retrieveAll(){
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
         $query = "SELECT * FROM `department` WHERE `colg_id` = '$this->col_id'";
 

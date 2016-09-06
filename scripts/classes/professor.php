@@ -8,11 +8,50 @@
  * Date: 03-09-2016
  * Time: 16:25
  */
+
+require_once('department.php');
+
  class Professor extends Department
  {
      public $prof_id = null;
      public $prof_name = null;
-     public $prof_skills = null;
+
+     function __construct($col_id, $dept_id, $prof_id = null)
+     {
+         parent::__construct($col_id, $dept_id);
+
+         if($prof_id == null){
+
+         }
+         else{
+
+             $this->prof_id = $prof_id;
+             $this->retrieve();
+         }
+     }
+
+     private function retrieve(){
+         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+         $query = "SELECT * FROM `profesor` WHERE `prof_id` = '$this->prof_id'";
+
+         if($res = $db->get_row($query)){
+             $this->prof_name = $res->prof_name;
+         }else{
+             throw new Exception('Failed retrieving professor information. Database Error.');
+         }
+     }
+
+     public function retrieveAll()
+     {
+         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
+         $query = "SELECT * FROM `professor` WHERE `dep_id` = '$this->dept_id'";
+
+         if($res = $db->get_results($query)){
+             return $res;
+         }else{
+             throw new Exception('Failed retrieving professors information. Database Error.');
+         }
+     }
 
      public function add($prof_id, $prof_name)
      {
