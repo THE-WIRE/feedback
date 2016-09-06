@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="706aa675-2f59-4f78-9338-f6804c075363" name="publishkar" url="http://feedback.publishkar.com">
-        <fileTransfer host="feedback.publishkar.com" port="21" rootFolder="/public_html/feedback" username="blishkar">
+        <fileTransfer host="feedback.publishkar.com" port="21" rootFolder="/public_html/feedback" password="dfe9dfe3dffadfe6dfeadff9dfdfdfc9dfc9dfcfdfd9dfd9df98df9adf98df9a" username="blishkar">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>

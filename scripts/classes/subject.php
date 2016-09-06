@@ -12,7 +12,7 @@ class Subject extends Department
         parent::__construct($col_id, $dept_id);
 
         if($sub_id == null){
-            return $this->retrieveAll();   
+            //return $this->retrieveAll();
         }
         else{
 
@@ -34,7 +34,7 @@ class Subject extends Department
         }
     }
     
-    private function retrieveAll(){
+    public function retrieveAll(){
         $db = new ezSQL_mysqli(DB_USER, DB_PASS, DB_NAME, DB_HOST);
         $query = "SELECT * FROM `subject` WHERE `dep_id` = '$this->dept_id'";
 
@@ -113,3 +113,5 @@ class Subject extends Department
         }
     }
 }
+
+

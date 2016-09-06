@@ -13,6 +13,8 @@
     <!-- CSS INCLUDE -->
     <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
     <!-- EOF CSS INCLUDE -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css"/>
 </head>
 <body>
 <!-- START PAGE CONTAINER -->
@@ -267,7 +269,7 @@
             <!-- END MESSAGES -->
 
             <body>
-            <table id="example" class="display" cellspacing="0" width="90%">
+            <table id="college" class="display" cellspacing="0" width="90%">
                 <thead>
                 <caption>College</caption>
                     <tr>
@@ -283,7 +285,7 @@
                 </tfoot>
             </table>
 
-            <table id="example" class="display" cellspacing="0" width="100%">
+            <table id="department" class="display" cellspacing="0" width="100%">
                 <thead>
                 <caption>Department</caption>
                     <tr>
@@ -305,15 +307,14 @@
             <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
             <!-- END PLUGINS -->
 
+            <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+            <script type="text/javascript" src="scripts/ajax/js/retrieveall.js"></script>
+
             <!-- START THIS PAGE PLUGINS-->
             <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
             <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
             <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
 
-            <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
-            <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
-            <script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js"></script>
-            <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
             <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'></script>
             <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js'></script>
             <script type='text/javascript' src='js/plugins/bootstrap/bootstrap-datepicker.js'></script>
@@ -333,18 +334,7 @@
             <!-- END TEMPLATE -->
             <!-- END SCRIPTS -->
 
+
+
             </body>
 </html>
-
-<?php
-
-/**
- * Created by PhpStorm.
- * User: Omkar Dubas
- * Date: 04-09-2016
- * Time: 11:52
- */
-class department
-{
-
-}
