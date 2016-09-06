@@ -154,35 +154,49 @@
                                 <div class="col-md-12">
 
                                     <!-- CONTACTS WITH CONTROLS -->
-                                    <div class="panel panel-default">
+                                    <div class="panel panel-default subform">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">SUBJECTS</h3>
                                         </div>
-                                        <form>
-                                            <script type="text/javascript">
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
 
-                                                $("#del").on("click",function(){
-                                                    $(#hide).val($(#sub_id).text()),
-                                                    $.ajax({
-                                                    type:'POST',
-                                                    url:'scripts/classes/feeedback_analyst.php',
-                                                    data:$('#something').serialize(),
-                                                    success: function(data){
-                                                                            console.log(data);
-                                                    }
-                                                });
-
-                                                });
-                                            </script>
                                          <input type="hidden" id="hide" name="hid"/>
-                                        <div class="panel-body list-group list-group-contacts">
-                                            <a href="#" class="list-group-item">
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                        <div class="panel-body list-group list-group-contacts ">
+                                            <a href="#" class="list-group-item " id="jaxitem1">
 
                                                 <span class="contacts-title">MATHS</span>
-                                                <p><span id="sub_id">123</span></p>
+                                                <p><span id="sub_id">213</span></p>
                                                 <div class="list-group-controls">
                                                     <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
-                                                    <button class="btn btn-primary btn-rounded" id="del"><span class="fa fa-times"></span></button>
+                                                    <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
                                                 </div>
                                             </a>
 
@@ -192,25 +206,390 @@
                             </div>
                             </div>
                             <div class="tab-pane" id="tab-second">
-                                <p>Donec tristique eu sem et aliquam. Proin sodales elementum urna et euismod. Quisque nisl nisl, venenatis eget dignissim et, adipiscing eu tellus. Sed nulla massa, luctus id orci sed, elementum consequat est. Proin dictum odio quis diam gravida facilisis. Sed pharetra dolor a tempor tristique. Sed semper sed urna ac dignissim. Aenean fermentum leo at posuere mattis. Etiam vitae quam in magna viverra dictum. Curabitur feugiat ligula in dui luctus, sed aliquet neque posuere.</p>
+                                <div class="col-md-12">
+
+                                    <!-- CONTACTS WITH CONTROLS -->
+                                    <div class="panel panel-default subform">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">SUBJECTS</h3>
+                                        </div>
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
+
+                                            <input type="hidden" id="hide" name="hid"/>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <span class="contacts-title">MATHS</span>
+                                                    <p><span id="sub_id">213</span></p>
+                                                    <div class="list-group-controls">
+                                                        <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
+                                                        <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="tab-pane" id="tab-third">
-                                <p>Vestibulum cursus augue sed leo tempor, at aliquam orci dictum. Sed mattis metus id velit aliquet, et interdum nulla porta. Etiam euismod pellentesque purus, in fermentum eros venenatis ut. Praesent vitae nibh ac augue gravida lacinia non a ipsum. Aenean vestibulum eu turpis eu posuere. Sed eget lacus lacinia, mollis urna et, interdum dui. Donec sed diam ut metus imperdiet malesuada. Maecenas tincidunt ultricies ipsum, lobortis pretium dolor sodales ut. Donec nec fringilla nulla. In mattis sapien lorem, nec tincidunt elit scelerisque tempus.</p>
+                                <div class="col-md-12">
+
+                                    <!-- CONTACTS WITH CONTROLS -->
+                                    <div class="panel panel-default subform">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">SUBJECTS</h3>
+                                        </div>
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
+
+                                            <input type="hidden" id="hide" name="hid"/>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <span class="contacts-title">MATHS</span>
+                                                    <p><span id="sub_id">213</span></p>
+                                                    <div class="list-group-controls">
+                                                        <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
+                                                        <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="tab-fourth">
-                                <p>In mattis sapien lorem, nec tincidunt elit scelerisque tempus. Quisque nisl nisl, venenatis eget dignissim et, adipiscing eu tellus. Sed nulla massa, luctus id orci sed, elementum consequat est. Proin dictum odio quis diam gravida facilisis. Sed pharetra dolor a tempor tristique. Sed semper sed urna ac dignissim. Aenean fermentum leo at posuere mattis. Etiam vitae quam in magna viverra dictum. Curabitur feugiat ligula in dui luctus, sed aliquet neque posuere.</p>
+                                <div class="col-md-12">
+
+                                    <!-- CONTACTS WITH CONTROLS -->
+                                    <div class="panel panel-default subform">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">SUBJECTS</h3>
+                                        </div>
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
+
+                                            <input type="hidden" id="hide" name="hid"/>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <span class="contacts-title">MATHS</span>
+                                                    <p><span id="sub_id">213</span></p>
+                                                    <div class="list-group-controls">
+                                                        <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
+                                                        <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="tab-fifth">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dolor sem, quis pharetra dui ultricies vel. Cras non pulvinar tellus, vel bibendum magna. Morbi tellus nulla, cursus non nisi sed, porttitor dignissim erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis commodo lectus. Vivamus vel tincidunt enim, non vulputate ipsum. Ut pellentesque consectetur arcu sit amet scelerisque. Fusce commodo leo eros, ut eleifend massa congue at.</p>
+                                <div class="col-md-12">
+
+                                    <!-- CONTACTS WITH CONTROLS -->
+                                    <div class="panel panel-default subform">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">SUBJECTS</h3>
+                                        </div>
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
+
+                                            <input type="hidden" id="hide" name="hid"/>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <span class="contacts-title">MATHS</span>
+                                                    <p><span id="sub_id">213</span></p>
+                                                    <div class="list-group-controls">
+                                                        <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
+                                                        <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="tab-sixth">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dolor sem, quis pharetra dui ultricies vel. Cras non pulvinar tellus, vel bibendum magna. Morbi tellus nulla, cursus non nisi sed, porttitor dignissim erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis commodo lectus. Vivamus vel tincidunt enim, non vulputate ipsum. Ut pellentesque consectetur arcu sit amet scelerisque. Fusce commodo leo eros, ut eleifend massa congue at.</p>
+                                <div class="col-md-12">
+
+                                    <!-- CONTACTS WITH CONTROLS -->
+                                    <div class="panel panel-default subform">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">SUBJECTS</h3>
+                                        </div>
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
+
+                                            <input type="hidden" id="hide" name="hid"/>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <span class="contacts-title">MATHS</span>
+                                                    <p><span id="sub_id">213</span></p>
+                                                    <div class="list-group-controls">
+                                                        <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
+                                                        <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="tab-seventh">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dolor sem, quis pharetra dui ultricies vel. Cras non pulvinar tellus, vel bibendum magna. Morbi tellus nulla, cursus non nisi sed, porttitor dignissim erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis commodo lectus. Vivamus vel tincidunt enim, non vulputate ipsum. Ut pellentesque consectetur arcu sit amet scelerisque. Fusce commodo leo eros, ut eleifend massa congue at.</p>
+                                <div class="col-md-12">
+
+                                    <!-- CONTACTS WITH CONTROLS -->
+                                    <div class="panel panel-default subform">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">SUBJECTS</h3>
+                                        </div>
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
+
+                                            <input type="hidden" id="hide" name="hid"/>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <span class="contacts-title">MATHS</span>
+                                                    <p><span id="sub_id">213</span></p>
+                                                    <div class="list-group-controls">
+                                                        <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
+                                                        <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="tab-eighth">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dolor sem, quis pharetra dui ultricies vel. Cras non pulvinar tellus, vel bibendum magna. Morbi tellus nulla, cursus non nisi sed, porttitor dignissim erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis commodo lectus. Vivamus vel tincidunt enim, non vulputate ipsum. Ut pellentesque consectetur arcu sit amet scelerisque. Fusce commodo leo eros, ut eleifend massa congue at.</p>
+                                <div class="col-md-12">
+
+                                    <!-- CONTACTS WITH CONTROLS -->
+                                    <div class="panel panel-default subform">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">SUBJECTS</h3>
+                                        </div>
+                                        <form id="something" method="POST" action="scripts/ajax/subdel.php">
+
+                                            <input type="hidden" id="hide" name="hid"/>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <div class="form-group grp-center" style="margin-left: auto; margin-right: auto">
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group input-group-lg">
+                                                                <span class="input-group-addon">+</span>
+                                                                <input type="text" class="form-control" placeholder="Large"/>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="list-group-controls">
+
+                                                        <!--<button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>-->
+                                                    </div>
+                                                    <span class="help-block">ADD SUBJECT</span><br/>
+                                                </a>
+
+
+                                            </div>
+
+
+                                            <div class="panel-body list-group list-group-contacts ">
+                                                <a href="#" class="list-group-item " id="jaxitem1">
+
+                                                    <span class="contacts-title">MATHS</span>
+                                                    <p><span id="sub_id">213</span></p>
+                                                    <div class="list-group-controls">
+                                                        <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
+                                                        <button class="btn btn-primary btn-rounded sub_remove" id="del"><span class="fa fa-times"></span></button>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -238,5 +617,24 @@
         <script type="text/javascript" src="js/actions.js"></script>
         <!-- END TEMPLATE -->
         <!-- END SCRIPTS -->
+
+            <script type="text/javascript">
+                $(".subform").on('click','.sub_remove', function(e){
+                    e.preventDefault();
+                    console.log('Clicked');
+                    $('#jaxitem1').css('display','none');
+                    $('#hide').val($('#sub_id').text());
+
+                        $.ajax({
+                            type:'POST',
+                            url:'scripts/ajax/subdel.php',
+                            data:$('#something').serialize(),
+                            success: function(data){
+                                console.log(data);
+                            }
+                        });
+
+                });
+            </script>
 </body>
 </html>
