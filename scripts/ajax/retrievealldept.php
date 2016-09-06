@@ -10,7 +10,7 @@ require_once('../classes/department.php');
 
 try{
 
-    $d = new Department('1001');
+    $d = new Department($_POST['colg_id']);
     $data = $d->retrieveall();
     $datax = json_encode($data);
     echo '{"data" :'.$datax.'}';

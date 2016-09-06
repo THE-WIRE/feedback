@@ -7,9 +7,9 @@
  */
 
 
-define('COLG_LEN', 3);
-define('DEPT_LEN', 2);
-define('SUBJ_LEN', 2);
+define('COLG_LEN', 4);
+define('DEPT_LEN', 4);
+define('SUBJ_LEN', 3);
 
 
 /**
@@ -80,5 +80,13 @@ function get_dept_id($uid){
  * @return string
  */
 function get_sub_id($uid){
-    return substr($uid, DEPT_LEN, SUBJ_LEN);
+    return substr($uid, COLG_LEN + DEPT_LEN, SUBJ_LEN);
+}
+
+/**
+ * @param $uid
+ * @return string
+ */
+function get_prof_id($uid){
+    return substr($uid, COLG_LEN + DEPT_LEN, PROF_LEN);
 }

@@ -355,20 +355,28 @@
                                     </ul>
                                 </div>
                                 <div class="panel-body">
-                                    <table id="college" class="table datatable">
-                                        <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                        </tr>
-                                        </thead>
-                                    </table>
+                                    <div>
+                                        <table id="college" class="table datatable">
+                                            <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2">
+                                        <button class="btn btn-default" value="ADD" data-toggle="modal" data-target="#addCollege">ADD</button>
+                                    </div>
                                 </div>
+
+
                             </div>
                             <!-- END COLLEGE DATATABLE -->
 
                             <!-- START DEPARTMENT DATATABLE -->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default departments-div" style="display: none;">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Departments</h3>
                                     <ul class="panel-controls">
@@ -378,21 +386,27 @@
                                     </ul>
                                 </div>
                                 <div class="panel-body">
-                                    <table id="department" class="table datatable">
-                                        <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                        </tr>
-                                        </thead>
-                                    </table>
+                                    <div>
+                                        <table id="department" class="table datatable">
+                                            <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2">
+                                        <button class="btn btn-default" value="ADD" data-toggle="modal" data-target="#addDept">ADD</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- END DEPARTMENT DATATABLE -->
 
 
                             <!-- START SUBJECT DATATABLE -->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default subjects-div" style="display: none;">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Subjects</h3>
                                     <ul class="panel-controls">
@@ -402,22 +416,28 @@
                                     </ul>
                                 </div>
                                 <div class="panel-body">
-                                    <table id="subject" class="table datatable">
-                                        <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Department</th>
-                                            <th>Sem</th>
-                                        </tr>
-                                        </thead>
-                                    </table>
+                                    <div>
+                                        <table id="subject" class="table datatable">
+                                            <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Department</th>
+                                                <th>Sem</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2">
+                                        <button class="btn btn-default" value="ADD" data-toggle="modal" data-target="#addSub">ADD</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- END SUBJECT DATATABLE -->
 
                             <!-- START PROFESSOR DATATABLE -->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default professors-div" style="display : none;">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Professors</h3>
                                     <ul class="panel-controls">
@@ -427,15 +447,22 @@
                                     </ul>
                                 </div>
                                 <div class="panel-body">
-                                    <table id="professor" class="table datatable">
-                                        <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                        </tr>
-                                        </thead>
-                                    </table>
+                                    <div>
+                                        <table id="professor" class="table datatable">
+                                            <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2">
+                                        <button class="btn btn-default" value="ADD" data-toggle="modal" data-target="#addProf">ADD</button>
+                                    </div>
                                 </div>
+
                             </div>
                             <!-- END PROFESSOR DATATABLE -->
 
@@ -496,7 +523,313 @@
 
     <!-- END SCRIPTS -->
 
+        <div class="college-modal-div">
+            <div id="college-modal" class="college-modal">
+
+                <!-- Modal -->
+                <div class="modal fade" id="addCollege" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <button id = "close-modal" type="button" class="close"
+                                        data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    ADD NEW COLLEGE
+                                </h4>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div id ="CollegeAdd" class="modal-body">
+
+
+
+                                <form id="addCollegeForm" name="form"  method="POST" class="form-horizontal" role="form">
+
+                                    <input type="hidden" id="action" name="action" value="AC"/>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="cid" >College ID</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="cid" name="cid" placeholder="College ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="cname" >College Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="cname" name="cname" placeholder="College Name"  />
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <input id="submit" type="submit" name="submit" class="btn btn-default" value="ADD COLLEGE"><img src="../../../assets/custom/loading.gif" id="img" style="display:none"/ >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--ADD NEW COLLEGE MODAL-->
+
+        <div class="dept-modal-div">
+            <div id="dept-modal" class="dept-modal">
+
+                <!-- Modal -->
+                <div class="modal fade" id="addDept" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <button id = "close-modal" type="button" class="close"
+                                        data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    ADD NEW DEPARTMENT
+                                </h4>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div id ="DeptAdd" class="modal-body">
+
+
+
+                                <form id="addDeptForm" name="form"  method="POST" class="form-horizontal" role="form">
+
+                                    <input type="hidden" id="action" name="action" value="AD"/>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="cid">College ID</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control colg_id"
+                                                   id="cid" name="cid" placeholder="College ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="deptid" >Department ID</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="deptid" name="deptid" placeholder="Department ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="deptnm" >Department Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="deptnm" name="deptnm" placeholder="Department Name"  />
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <input id="submit" type="submit" name="submit" class="btn btn-default" value="ADD DEPARTMENT"><img src="../../../assets/custom/loading.gif" id="img" style="display:none"/ >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--ADD NEW DEPARTMENT MODAL-->
+
+        <div class="sub-modal-div">
+            <div id="sub-modal" class="sub-modal">
+
+                <!-- Modal -->
+                <div class="modal fade" id="addSub" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <button id = "close-modal" type="button" class="close"
+                                        data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    ADD NEW SUBJECT
+                                </h4>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div id ="SubAdd" class="modal-body">
+
+
+
+                                <form id="addSubForm" name="form"  method="POST" class="form-horizontal" role="form">
+
+                                    <input type="hidden" id="action" name="action" value="AS"/>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="cid">College ID</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control colg_id"
+                                                   id="cid" name="cid" placeholder="College ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="deptid" >Department ID</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control dept_id"
+                                                   id="deptid" name="deptid" placeholder="Department ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="deptnm" >Semester</label>
+                                        <div class="col-sm-10">
+                                          <select class="form-control" name="sem" id="sem">
+                                              <option id = "1">1</option>
+                                              <option id = "2">2</option>
+                                              <option id = "3">3</option>
+                                              <option id = "4">4</option>
+                                              <option id = "5">5</option>
+                                              <option id = "6">6</option>
+                                              <option id = "7">7</option>
+                                              <option id = "8">8</option>
+                                          </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="subid" >Subject ID</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="subid" name="subid" placeholder="Subject ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="subnm" >Subject Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="subnm" name="subnm" placeholder="Subject Name"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <input id="submit" type="submit" name="submit" class="btn btn-default" value="ADD SUBJECT"><img src="../../../assets/custom/loading.gif" id="img" style="display:none"/ >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--ADD NEW SUBJECT MODAL-->
+
+
+        <div class="prof-modal-div">
+            <div id="prof-modal" class="prof-modal">
+
+                <!-- Modal -->
+                <div class="modal fade" id="addProf" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <button id = "close-modal" type="button" class="close"
+                                        data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    ADD NEW PROFESSORS
+                                </h4>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div id ="ProfAdd" class="modal-body">
+
+
+
+                                <form id="addProfForm" name="form"  method="POST" class="form-horizontal" role="form">
+
+                                    <input type="hidden" id="action" name="action" value="AP"/>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="cid">College ID</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control colg_id"
+                                                   id="cid" name="cid" placeholder="College ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="deptid" >Department ID</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control dept_id"
+                                                   id="deptid" name="deptid" placeholder="Department ID"  />
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="profid" >Professor ID</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="profid" name="profid" placeholder="Professor ID"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label"
+                                               for="profnm" >Professor Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   id="profnm" name="profnm" placeholder="Professor Name"  />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <input id="submit" type="submit" name="submit" class="btn btn-default" value="ADD PROFESSOR"><img src="../../../assets/custom/loading.gif" id="img" style="display:none"/ >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--ADD NEW PROFESSOR MODAL-->
+
+
     </body>
+
+
 </html>
 
 
