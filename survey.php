@@ -333,44 +333,43 @@
         </ul>
         <!-- END BREADCRUMB -->
 
-        <div class="panel panel-default nav-tabs-vertical">
-            <div class="panel-heading">
+        <div class="page-content-wrap">
+            <div class="panel-heading page-content-wrap">
                 <h3 class="panel-title"><strong>SURVEY</strong></h3>
             </div>
-            <div class="tabs">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab-first" data-toggle="tab">SUB I</a></li>
-                    <li><a href="#tab-second" data-toggle="tab">SUB II</a></li>
-                    <li><a href="#tab-third" data-toggle="tab">SUB III</a></li>
-                    <li><a href="#tab-fourth" data-toggle="tab">SUB IV</a></li>
-                    <li><a href="#tab-fifth" data-toggle="tab">SUB VI</a></li>
-                </ul>
-                <div class="panel-body tab-content">
-                    <div class="tab-pane active" id="tab-first">
 
-                        <div class="page-content-wrap">
+            <div class="row">
+                <div class="col-md-12">
 
-                            <div class="row">
-                                <div class="col-md-12">
+                    <form class="form-horizontal">
 
-                                    <form class="form-horizontal">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
-                                                <ul class="panel-controls">
-                                                    <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
-                                                </ul>
-                                            </div>
+                        <div class="panel panel-default tabs">
+                            <ul class="nav nav-tabs role="tablist">
+                                <li class="active"><a href="#tab-first" data-toggle="tab">SUB I</a></li>
+                                <li><a href="#tab-second" data-toggle="tab">SUB II</a></li>
+                                <li><a href="#tab-third" data-toggle="tab">SUB III</a></li>
+                                <li><a href="#tab-fourth" data-toggle="tab">SUB IV</a></li>
+                                <li><a href="#tab-fifth" data-toggle="tab">SUB V</a></li>
+                            </ul>
+                         <div class="panel-body tab-content">
+                          <div class="tab-pane active" id="tab-first">
 
-                                            <div class="panel-body">
+                            <div class="panel-heading">
+                                <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>
+                            </div>
 
-                                                <div class="row">
+                                <div class="panel-body">
 
-                                                    <div class="col-md-12">
+                                    <div class="row">
 
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the Subject Understandable?</label>
-                                                            <div class="container">
+                                        <div class="col-md-12">
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                    <div class="container">
                                                             <div class="col-md-6">
                                                                 <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
                                                                 <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
@@ -378,407 +377,341 @@
                                                                 <button type="button" class="btn btn-success"><span class="badge">4</span></button>
                                                                 <button type="button" class="btn btn-success"><span class="badge">5</span></button>
                                                             </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Comments</label>
-                                                            <div class="col-md-9">
-                                                                <div class="col-md-9 col-xs-12">
-                                                                    <textarea class="form-control" rows="5"></textarea>
-                                                                    <span class="help-block">Please provide proper feedback</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="panel-footer">
-                                                            <button class="btn btn-default">Clear Form</button>
-                                                            <button class="btn btn-primary pull-right">Submit</button>
-                                                        </div>
-
                                                     </div>
-                                    </form>
+                                            </div>
 
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Comments</label>
+                                                    <div class="col-md-9">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <textarea class="form-control" rows="5"></textarea>
+                                                            <span class="help-block">Please provide proper feedback</span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="tab-pane" id="tab-second">
+
+                                <div class="panel-heading">
+                                    <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
+                                        <ul class="panel-controls">
+                                            <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                    <div class="container">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                            <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                            <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Comments</label>
+                                                    <div class="col-md-9">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <textarea class="form-control" rows="5"></textarea>
+                                                            <span class="help-block">Please provide proper feedback</span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                             </div>
+
+                            <div class="tab-pane" id="tab-third">
+
+                                <div class="panel-heading">
+                                    <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
+                                        <ul class="panel-controls">
+                                            <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                    <div class="container">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                            <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                            <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Comments</label>
+                                                    <div class="col-md-9">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <textarea class="form-control" rows="5"></textarea>
+                                                            <span class="help-block">Please provide proper feedback</span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                            <div class="tab-pane" id="tab-fourth">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
+                                        <ul class="panel-controls">
+                                            <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                   <div class="container">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                            <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                            <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Comments</label>
+                                                    <div class="col-md-9">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <textarea class="form-control" rows="5"></textarea>
+                                                            <span class="help-block">Please provide proper feedback</span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
 
+                            <div class="tab-pane" id="tab-fifth">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
+                                        <ul class="panel-controls">
+                                            <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                    <div class="container">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                            <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                            <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                            <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Is the Subject Understandable?</label>
+                                                <div class="container">
+                                                    <div class="col-md-6">
+                                                        <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
+                                                        <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
+                                                        <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">4</span></button>
+                                                        <button type="button" class="btn btn-success"><span class="badge">5</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Comments</label>
+                                                    <div class="col-md-9">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <textarea class="form-control" rows="5"></textarea>
+                                                            <span class="help-block">Please provide proper feedback</span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="panel-footer">
+                                 <button class="btn btn-primary pull-left">Clear form <span class="fa fa-eraser fa-align-left"></span></button>
+                                 <button class="btn btn-primary pull-right">Submit <span class="fa fa-comments-o center-block"></span></button>
+                             </div>
+
+                         </div>
                         </div>
-
-
-                    </div>
-                    <div class="tab-pane" id="tab-second">
-
-                        <div class="page-content-wrap">
-
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <form class="form-horizontal">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
-                                                <ul class="panel-controls">
-                                                    <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="panel-body">
-
-                                                <div class="row">
-
-                                                    <div class="col-md-12">
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the Subject Understandable?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Are the concepts clear?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Comments</label>
-                                                            <div class="col-md-9">
-                                                                <div class="col-md-9 col-xs-12">
-                                                                    <textarea class="form-control" rows="5"></textarea>
-                                                                    <span class="help-block">Please provide proper feedback</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="panel-footer">
-                                                            <button class="btn btn-default">Clear Form</button>
-                                                            <button class="btn btn-primary pull-right">Submit</button>
-                                                        </div>
-
-                                                    </div>
-                                    </form>
-
-                                </div>
-                            </div>
-
-                    </div>
-                    <div class="tab-pane" id="tab-third">
-
-                        <div class="page-content-wrap">
-
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <form class="form-horizontal">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
-                                                <ul class="panel-controls">
-                                                    <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="panel-body">
-
-                                                <div class="row">
-
-                                                    <div class="col-md-12">
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the Subject Understandable?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Are the concepts clear?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the material provided up-to-date?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Comments</label>
-                                                            <div class="col-md-9">
-                                                                <div class="col-md-9 col-xs-12">
-                                                                    <textarea class="form-control" rows="5"></textarea>
-                                                                    <span class="help-block">Please provide proper feedback</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="panel-footer">
-                                                            <button class="btn btn-default">Clear Form</button>
-                                                            <button class="btn btn-primary pull-right">Submit</button>
-                                                        </div>
-
-                                                    </div>
-                                    </form>
-
-                                </div>
-                            </div>
-
-                    </div>
-                    <div class="tab-pane" id="tab-fourth">
-
-                        <div class="page-content-wrap">
-
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <form class="form-horizontal">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
-                                                <ul class="panel-controls">
-                                                    <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="panel-body">
-
-                                                <div class="row">
-
-                                                    <div class="col-md-12">
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the Subject Understandable?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Are the concepts clear?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the material provided up-to-date?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Was the portion completed on time?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Comments</label>
-                                                            <div class="col-md-9">
-                                                                <div class="col-md-9 col-xs-12">
-                                                                    <textarea class="form-control" rows="5"></textarea>
-                                                                    <span class="help-block">Please provide proper feedback</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="panel-footer">
-                                                            <button class="btn btn-default">Clear Form</button>
-                                                            <button class="btn btn-primary pull-right">Submit</button>
-                                                        </div>
-
-                                                    </div>
-                                    </form>
-
-                                </div>
-                            </div>
-
-                    </div>
-                    <div class="tab-pane" id="tab-fifth">
-
-                        <div class="page-content-wrap">
-
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <form class="form-horizontal">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h5 class="panel-title"><strong>FeedBack</strong> Questions</h5>
-                                                <ul class="panel-controls">
-                                                    <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="panel-body">
-
-                                                <div class="row">
-
-                                                    <div class="col-md-12">
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the Subject Understandable?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Are the concepts clear?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Is the material provided up-to-date?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Was the portion completed on time?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Are you satisfied?</label>
-                                                            <div class="container">
-                                                                <div class="col-md-6">
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">1</span></button>
-                                                                    <button type="button" class="btn btn-danger"><span class="badge">2</span></button>
-                                                                    <button type="button" class="btn btn-warning"><span class="badge">3</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">4</span></button>
-                                                                    <button type="button" class="btn btn-success"><span class="badge">5</span></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Comments</label>
-                                                            <div class="col-md-9">
-                                                                <div class="col-md-9 col-xs-12">
-                                                                    <textarea class="form-control" rows="5"></textarea>
-                                                                    <span class="help-block">Please provide proper feedback</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="panel-footer">
-                                                            <button class="btn btn-default">Clear Form</button>
-                                                            <button class="btn btn-primary pull-right">Submit</button>
-                                                        </div>
-
-                                                    </div>
-                                    </form>
-
-                                </div>
-                            </div>
-
-
-                    </div>
+                    </form>
                 </div>
             </div>
-        </div>
 
 
         <!-- START PRELOADS -->
