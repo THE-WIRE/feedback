@@ -381,8 +381,12 @@
         
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
         <script type="text/javascript" src="pjax-standalone.min.js"></script>
-       
-        <!-- END TEMPLATE -->
+        <script type="text/javascript" src="pjax-standalone.js"></script>
+        <script type="text/javascript" src="Gruntfile.js"></script>
+
+
+
+    <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
 
 </body>
