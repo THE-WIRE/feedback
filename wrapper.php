@@ -15,9 +15,17 @@
         <!-- EOF CSS INCLUDE -->
 
 <!--pjax I got u-->
-
+        <script type="text/javascript" src="pjax-standalone.js"></script>
 		<script type="text/javascript">
-			pjax.connect();
+
+
+            if(typeof console === 'undefined') console = {"log":function(m){}};
+            pjax.connect({
+                'container':'content',
+                'success':function () {
+                        console.log('page loaded');
+                }
+            });
 		</script>
 
 
@@ -44,18 +52,18 @@
                             </div>
                             <div class="profile-data">
                                 <div class="profile-data-name">John Doe</div>
-                                <div class="profile-data-title">Web Developer/Designer</div>
+                                <div class="profile-data-title"> <?php echo date('l jS \of F Y h:i:s A'); ?></div>
                             </div>
                             <div class="profile-controls">
-                                <a href="profadd.php" data-pjax='content' class="profile-control-left"><span class="fa fa-info"></span></a>
-                                <a href="subadd.php" data-pjax='content' class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                                <a href="profadd.php" class="profile-control-left" data-pjax='content'><span class="fa fa-info"></span></a>
+                                <a href="subadd.php" class="profile-control-right" data-pjax='content'><span class="fa fa-envelope"></span></a>
                             </div>
                         </div>                                                                        
                     </li>
                     <li class="xn-title">Navigation</li>
                     <li class="active">
                         <a href="profadd.php" data-pjax='content'><span class="fa fa-desktop"></span> <span class="xn-text">ADD Professor</span></a>
-                        <a href="subadd.php" data-pjax='content'><span class="fa fa-desktop"></span> <span class="xn-text">ADD Subject</span></a>                        
+                        <a href="subadd.php" data-pjax='content'><span class="fa fa-desktop"></span> <span class="xn-text">ADD Subject</span></a>
                     </li>                    
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Pages</span></a>
@@ -329,10 +337,11 @@
                     <li class="active">Dashboard</li>
                 </ul>
                 <!-- END BREADCRUMB -->
+                <div class="container">
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
 
-                		<div id='content'>
+                		<div id='content' >
                 			<?php echo $contents ?>
                 		</div>
 
@@ -340,7 +349,8 @@
 
 
 
-                </div><!--end page content-wrap-->		
+                </div><!--end page content-wrap-->
+                 </div>
             </div><!--end page content-->
     </div><!--end page container-->
 
@@ -362,8 +372,8 @@
         
         <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
         <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>       
-        <script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js"></script>
-        <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
+        <!--<script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js"></script>
+        <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>-->
         <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'></script>
         <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js'></script>                
         <script type='text/javascript' src='js/plugins/bootstrap/bootstrap-datepicker.js'></script>                
@@ -380,7 +390,37 @@
         <script type="text/javascript" src="js/actions.js"></script>
         
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
-        <script type="text/javascript" src="pjax-standalone.min.js"></script>>
+    <script>
+        $('.profADD').on('click', function (e) {
+            e.preventDefault();
+            console.log('clicked');
+            $('.form-group').show();
+            $('.help-block').show();
+            $('.profADD').hide();
+
+        })
+    </script>
+
+
+    <script type="text/javascript">
+        $(".sub_remove").on("click",function(e){
+            e.preventDefault();
+            console.log('Clicked');
+            $('#jaxitem1').css('display','none');
+            $('#hide').val($('#sub_id').text());
+
+            $.ajax({
+                type:'POST',
+                url:'scripts/ajax/subdel.php',
+                data:$('#something').serialize(),
+                success: function(data){
+                    console.log(data);
+                }
+            });
+
+        });
+    </script>
+
         <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
 
