@@ -381,7 +381,7 @@
         
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
         <script type="text/javascript" src="pjax-standalone.min.js"></script>
-        <script type="text/javascript" src="pjax-standalone.js"></script>>
+       
         <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
 
