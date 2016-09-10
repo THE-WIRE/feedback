@@ -44,7 +44,7 @@
                             </div>
                             <div class="profile-data">
                                 <div class="profile-data-name">John Doe</div>
-                                </div>
+                                <div class="profile-data-title">Web Developer/Designer</div>
                             </div>
                             <div class="profile-controls">
                                 <a href="profadd.php" data-pjax='content' class="profile-control-left"><span class="fa fa-info"></span></a>
@@ -380,13 +380,8 @@
         <script type="text/javascript" src="js/actions.js"></script>
         
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
-        <script type="text/javascript" src="pjax-standalone.min.js"></script>
-        <script type="text/javascript" src="pjax-standalone.js"></script>
-        <script type="text/javascript" src="Gruntfile.js"></script>
-
-
-
-    <!-- END TEMPLATE -->
+        <script type="text/javascript" src="pjax-standalone.min.js"></script>>
+        <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
 
 </body>
